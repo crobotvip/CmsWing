@@ -5,10 +5,10 @@
 {% block content %}
 <section>
 	<div class="container">
-		{{11|show_ad("code")|safe}}
+		<!--{{11|show_ad("code")|safe}}-->
 		<div class="row">
 
-			<div class="col-md-9">
+			<div class="col-md-12">
 				<!-- REVOLUTION SLIDER -->
 				<div class="slider fullwidthbanner-container roundedcorners margin-bottom-0">
 					<!--
@@ -112,7 +112,7 @@
 				</div>
 				<!-- /REVOLUTION SLIDER -->
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-2" style="display:none;">
 				<div class="panel panel-default margin-bottom-0">
 					<div class="panel-heading">
 						<a class="btn btn-primary btn-xs pull-right"><i class="fa fa-fire"></i></a>
@@ -131,17 +131,18 @@
 				</div>
 
 			</div>
-			{%if 14|show_ad('code')%}
+			<!--
+			{%if 14|show_ad('code')%}-->
 			<!-- INFO BAR -->
-			<div class="margin-top-20 col-md-12 ">
+					<!--<div class="margin-top-20 col-md-12 ">
 				{{14|show_ad('code')|safe}}
-			</div>
+			</div>-->
 			<!-- /INFO BAR -->
-			{%endif%}
+					<!--{%endif%} -->
 			<!-- RIGHT -->
-			<div class="col-sm-9 margin-top-20">
+			<div class="col-sm-12 margin-top-20" >
 
-				<ul class="nav nav-tabs nav-justified" style="position: inherit;background-color: #f1f2f7">
+				<ul class="nav nav-tabs nav-justified" style="position: inherit;background-color: #f1f2f7;display:none;">
 					<li class="active"><a href="#new" data-toggle="tab" class="size-18">最新</a></li>
 					{{HOOK@hometitle|safe}}
 					{#
@@ -154,7 +155,7 @@
 					</li>
 					#}
 				</ul>
-				<div class="panel panel-default" style="margin-top: -5px">
+				<div class="panel panel-default" style="margin-top: -5px;display:none;">
 					<div class="panel-body padding-10">
 
 				<div class="tab-content">
@@ -324,7 +325,7 @@
 				</div>
 			</div>
 			<!-- LEFT -->
-			<div class="col-md-3 col-sm-3 margin-top-20">
+			<div class="col-md-3 col-sm-3 margin-top-20" style="display:none;">
 
 				{% if controller.is_login %}
 				<div class="alert alert-info margin-bottom-20 box-shadow-4"><!-- INFO -->
@@ -372,11 +373,9 @@
 
 		</div>
 
+	
+	</div>
 
-	</div>
-	<div class="container">
-		{{HOOK@homeEnd|safe}}
-	</div>
 </section>
 {% endblock %}
 {%block script%}

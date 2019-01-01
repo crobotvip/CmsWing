@@ -77,6 +77,7 @@ CLASSES:
                 <!-- CAROUSEL -->
                 <div class="owl-carousel buttons-autohide controlls-over margin-bottom-30 radius-4" data-plugin-options='{"singleItem": true, "autoPlay": 6000, "navigation": true, "pagination": true, "transitionStyle":"fade"}'>
                     <!-- item -->
+                    {% for item in list%}
                     <div>
                         <div class="caption-slider-default">
                             <div class="display-table">
@@ -94,27 +95,28 @@ CLASSES:
 
                         <img class="img-responsive radius-4" src="/static/assets/images/top_2.png" width="851" height="335" alt="">
                     </div>
+                    {%endfor%}
                     <!-- /item -->
 
                     <!-- item -->
-                    <div>
+                    <!--<div>-->
 
-                        <div class="caption-slider-default">
-                            <div class="display-table">
-                                <div class="display-table-cell vertical-align-middle">
-                                    <div class="caption-container text-left">
-                                        <h2>演示广告位置 <strong>就是这里</strong></h2>
-                                        <p>
-                                            这是一个商城分类页面的广告位<br />
-                                            你可以放置您的推广营销内容.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!--<div class="caption-slider-default">-->
+                            <!--<div class="display-table">-->
+                                <!--<div class="display-table-cell vertical-align-middle">-->
+                                    <!--<div class="caption-container text-left">-->
+                                        <!--<h2>演示广告位置 <strong>就是这里</strong></h2>-->
+                                        <!--<p>-->
+                                            <!--这是一个商城分类页面的广告位<br />-->
+                                            <!--你可以放置您的推广营销内容.-->
+                                        <!--</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
 
-                        <img class="img-responsive radius-4" src="/static/assets/images/top_1.png" width="851" height="335" alt="">
-                    </div>
+                        <!--<img class="img-responsive radius-4" src="/static/assets/images/top_1.png" width="851" height="335" alt="">-->
+                    <!--</div>-->
                     <!-- /item -->
 
                 </div>
